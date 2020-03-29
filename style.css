@@ -18,22 +18,21 @@ body {
   position: relative;
 }
 #start {
-  padding-top: 40px;
+  padding-top: 20px;
   font-size: 1.5em;
   font-weight: bolder;
-  word-break: break-all;
-  width: 150px;
-  height: 15%;
-  border: 2px solid lightgrey;
+  margin: 20% auto;
+  width: 25;
+  height: 10%;
+  background-color: #eaf0f1;
   text-align: center;
   cursor: pointer;
-  position: absolute;
-  left: 25%;
+
   top: 30%;
   color: rgb(206, 11, 11);
 }
 #start:hover {
-  border: 3px solid lightseagreen;
+  border: 2px solid lightseagreen;
   color: lightseagreen;
 }
 
@@ -93,7 +92,7 @@ body {
   text-align: center;
 }
 #counter {
-  font-size: 3em;
+  font-size: 2em;
 }
 #btimeGauge {
   width: 9.4em;
@@ -127,11 +126,11 @@ body {
   margin-right: 5px;
 }
 #scoreContainer {
-  margin: 7px;
+  margin: 6px;
   background-color: white;
-  opacity: 0.8;
-  height: 60%;
-  width: 99%;
+  opacity: 0.9;
+  height: 70%;
+  width: 97%;
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px;
   position: relative;
@@ -139,8 +138,8 @@ body {
 }
 #scoreContainer img {
   position: absolute;
-  top: 10%;
-  left: 55;
+  margin: 10% auto;
+  left: 44%;
   height: 15%;
 }
 #scoreContainer p {
@@ -148,8 +147,8 @@ body {
   display: block;
   width: 59px;
   height: 59px;
-  top: 25%;
-  left: 60%;
+  margin: 30% auto;
+  left: 45%;
   font-size: 1.5em;
   font-weight: bold;
   text-align: center;
@@ -158,6 +157,7 @@ body {
   font-size: 20px;
   text-align: center;
   font-weight: bold;
+  margin: 10% auto;
 }
 
 a {
@@ -252,15 +252,13 @@ a:hover span:nth-child(6) {
   #container,
   #start,
   #question,
-  #qImg,
-  #choices,
-  #timer,
-  #counter,
-  #btimeGauge,
-  #timeGauge,
-  #progress,
-  #scoreContainer,
-  #scoreContainer {
+  #choices {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  #qImg {
+    display: none;
   }
 }
