@@ -130,7 +130,7 @@ body {
   background-color: white;
   opacity: 0.9;
   height: 70%;
-  width: 97%;
+
   border-radius: 5px;
   box-shadow: 0px 5px 15px 0px;
   position: relative;
@@ -139,7 +139,7 @@ body {
 #scoreContainer img {
   position: absolute;
   margin: 10% auto;
-  left: 44%;
+  left: 44.5%;
   height: 15%;
 }
 #scoreContainer p {
@@ -147,7 +147,7 @@ body {
   display: block;
   width: 59px;
   height: 59px;
-  margin: 30% auto;
+  margin: 20% auto;
   left: 45%;
   font-size: 1.5em;
   font-weight: bold;
@@ -260,5 +260,25 @@ a:hover span:nth-child(6) {
   /* For mobile phones: */
   #qImg {
     display: none;
+  }
+}
+@media only screen and (max-width: 500px) {
+  /* For mobile phones: */
+  #scoreContainer img {
+    position: absolute;
+    margin: 10% auto;
+    left: 44%;
+    height: 15%;
+  }
+  #scoreContainer p {
+    position: absolute;
+    display: block;
+    width: 59px;
+    height: 59px;
+    margin: 30% auto;
+    left: 45%;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-align: center;
   }
 }
